@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8000'  // local backend for testing
+  apiUrl: 'http://localhost:8000'
 };
