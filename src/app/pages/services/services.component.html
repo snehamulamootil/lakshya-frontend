@@ -1,0 +1,20 @@
+<div *ngIf="service" class="container py-5">
+  <h2 class="text-center fw-bold ">{{ service.title }}</h2>
+  <p class="text-center mb-5">{{service.para}}</p>
+
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img [src]="service.image" alt="{{ service.title }}" class="img-fluid rounded shadow">
+    </div>
+
+    <div class="col-md-6 d-flex flex-column justify-content-start">
+    <p class="fs-5 text-muted mb-4 text-start">
+        {{ service.description1 }}
+    </p>
+    <p class="fs-5 text-muted text-start">
+        {{ service.description2 }}
+    </p>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,96 @@
+/* Overall section */
+.price-package-form {
+  background-color: #fff; /* White for top header */
+}
+
+
+/* Heading and paragraph styling */
+.form-header {
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+
+.form-title {
+  font-size: 2.2rem; /* larger heading */
+  font-family: 'Playfair Display', serif;
+  color: #222;
+}
+
+.form-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px; /* keeps paragraph centered nicely */
+  margin: 0 auto; /* equal spacing on both sides */
+  line-height: 1.7;
+}
+
+
+
+/* Full-width grey form area */
+.form-body {
+  background-color: #f2f2f2; /* light grey background */
+  width: 100%;
+}
+
+/* Input and select styles */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;   /* You can replace with any font you like */
+  font-size: 16px;                      /* Adjust text size */
+  color: #333;                          /* Dark gray for better readability */
+  letter-spacing: 0.5px; 
+  margin-top: 0.8rem;
+  color: #333;
+}
+
+/* Button */
+.btn-dark {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #222;
+}
+
+/* Rounded and stylish button */
+.enquire-btn {
+  border-radius: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.alert {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* Responsive padding */
+@media (max-width: 576px) {
+  .form-body {
+    padding: 2rem 1rem;
+  }
+}

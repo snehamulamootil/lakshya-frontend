@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2">
+  <div class="container">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center" routerLink="/" style="gap: 6px;">
+      <img src="assets/images/IMG_0222.JPG" width="50" height="50" alt="logo" class="rounded-circle border border-2 border-light shadow-sm">
+      <div class="brand-text lh-sm">
+        <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; color: #222;">
+          Lakshya Makeovers
+        </div>
+        <small class="text-muted" style="font-size: 0.8rem;">Glamour · Bridal · Styling</small>
+      </div>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+      aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/" style="font-size: 1rem; font-weight: 500;">Home</a></li>
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/" style="font-size: 1rem; font-weight: 500;">About</a></li>
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/" style="font-size: 1rem; font-weight: 500;">Porfolio</a></li>
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/" style="font-size: 1rem; font-weight: 500;">Reels</a></li>
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/" style="font-size: 1rem; font-weight: 500;">Vedios</a></li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" routerLink="/services/trial-makeup">Trial Makeup</a></li>
+            <li><a class="dropdown-item" routerLink="/services/bridal-makeup">Bridal Makeup & Hair</a></li>
+            <li><a class="dropdown-item" routerLink="/services/family-friends">Family & Friends</a></li>
+            <li><a class="dropdown-item" routerLink="/services/mehandi">Mehandi</a></li>
+        </ul>
+        </li>
+
+
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/gallery" style="font-size: 1rem; font-weight: 500;">Makeover</a></li>
+        <li class="nav-item"><a class="nav-link px-3" routerLink="/about" style="font-size: 1rem; font-weight: 500;">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,230 @@
+/* Full-screen carousel styling like inspiritmakeovers.com */
+#heroCarousel {
+  position: relative;
+}
+
+.hero-img {
+  height: 100vh;              /* Full screen height */
+  width: 100%;
+  object-fit: cover;           /* Crops edges slightly for perfect fit */
+  filter: brightness(80%);     /* Dim for better text visibility */
+}
+
+/* Overlay text centered */
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);  /* Subtle overlay */
+}
+
+/* Buttons and typography */
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+  max-width: 700px;
+}
+
+.carousel-caption .btn-primary {
+  background-color: #e7cfcf;
+  border: none;
+}
+
+.carousel-caption .btn-primary:hover {
+  background-color: #f8f6f6;
+}
+
+.carousel-caption .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Arrows positioning */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 3rem;
+  height: 3rem;
+}
+.what-we-do {
+  background: #fffaf9;
+}
+
+.what-we-do h2 {
+  letter-spacing: 1px;
+}
+
+.what-we-do-text {
+  font-size: 1.25rem;       /* larger text */
+  line-height: 1.9;         /* more breathing space */
+  color: #444;
+  max-width: 100%;          /* full width */
+  text-align: justify;      /* clean alignment */
+}
+
+/* .btn-contact:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  transition: all 0.3s ease;
+} */
+
+.btn-square {
+  border-radius: 0 !important;  /* removes rounded corners */
+  transition: all 0.3s ease;
+}
+
+.hero-title {
+  letter-spacing: 3px;
+  line-height: 1.1;
+  /* margin-left: -8rem; */
+}
+
+/* .hero-subtitle {
+  margin-left: 36.5rem; 
+  font-weight: 700;
+} */
+
+.btn-outline-light {
+  transition: all 0.3s ease;
+}
+
+/* .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+} */
+
+.cta-section {
+  background-color: #777575;   /* or your brand color */
+  color: #fff;
+  border-top: 3px solid #f7f6f6;
+  padding-top: 0.5rem;      /* reduce top space */
+  padding-bottom: 0.5rem;   /* reduce bottom space */
+}
+
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem;    /* closer spacing between title and subtitle */
+}
+
+.cta-subtitle {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* WhatsApp Floating Button with Text */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+
+.about-row {
+  background-color: #ffffff; /* Pure white background */
+}
+
+.about-row h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.about-row p {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #444;
+}
+
+/* Make artist photo small and square */
+.artist-photo {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.artist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.artist-photo img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-float i {
+  font-size: 30px;
+}
+
+.whatsapp-text {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Responsive — hide text on very small screens */
+@media (max-width: 576px) {
+  .whatsapp-text {
+    display: none;
+  }
+  .whatsapp-float {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    margin-left: 0; /* center align for mobile */
+  }
+  .hero-subtitle {
+    margin-left: 1.5rem; /* smaller offset for smaller screens */
+  }
+}

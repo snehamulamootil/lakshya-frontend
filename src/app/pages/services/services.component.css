@@ -1,0 +1,25 @@
+h2 {
+  letter-spacing: 1.5px;
+  font-size: 50px;
+  /* text-transform: uppercase; */
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+
+p {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 30px;
+}
+
+img {
+  transition: transform 0.4s ease;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.03);
+}

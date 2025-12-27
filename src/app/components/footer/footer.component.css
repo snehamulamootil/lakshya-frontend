@@ -1,0 +1,73 @@
+/* FOOTER COLORS */
+.site-footer .footer-top {
+  background-color: #363737; /* main footer background */
+}
+
+.site-footer .footer-bottom {
+  background-color: #404242; /* lower copyright section */
+}
+
+/* TEXT STYLING */
+.site-footer .footer-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.site-footer p {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+/* SOCIAL ICONS BASE STYLE */
+.social-link {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ICON HOVER COLORS BY PLATFORM */
+.social-link.facebook:hover {
+  background-color: #1877f2; /* Facebook blue */
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 10px #1877f2;
+}
+
+.social-link.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 10px #d6249f;
+}
+
+.social-link.youtube:hover {
+  background-color: #ff0000;
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.social-link.twitter:hover {
+  background-color: #1da1f2;
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 10px #1da1f2;
+}
+
+.social-link.linkedin:hover {
+  background-color: #0077b5;
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 10px #0077b5;
+}

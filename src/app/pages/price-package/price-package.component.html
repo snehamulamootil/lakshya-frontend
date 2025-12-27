@@ -1,0 +1,100 @@
+<section class="price-package-form py-5">
+  <div class="container">
+    <!-- Header area (white background) -->
+    <div class="text-center form-header py-4">
+      <h2 class="fw-bold mb-3 form-title">
+        Get Your Price Package
+      </h2>
+      <p class="text-muted mb-0 form-description">
+        Fix an appointment with our specialists so that you are comfortably confident of having your 
+        <br> hairstyle and makeup done to perfection before the big event.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ✅ SUCCESS / ERROR MESSAGES -->
+  <div *ngIf="successMessage" class="alert alert-success text-center mt-3">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger text-center mt-3">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Full-width grey form area -->
+  <div class="form-body py-5 mt-4">
+    <div class="container">
+      <form (ngSubmit)="onSubmit()" #packageForm="ngForm">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" name="name" class="form-control" [(ngModel)]="formData.name" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" name="phone" class="form-control" [(ngModel)]="formData.phone" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" [(ngModel)]="formData.email">
+            </div>
+
+            <!-- City -->
+            <div class="mb-3">
+              <label class="form-label">City</label>
+              <input type="text" name="city" class="form-control" [(ngModel)]="formData.city">
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="mb-3">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" name="date" class="form-control" [(ngModel)]="formData.date">
+            </div>
+
+            <!-- Service Selection -->
+            <!-- <div class="mb-3">
+              <label class="form-label">Service Interested In</label>
+              <select name="service" class="form-select" [(ngModel)]="formData.service">
+                <option value="Trial Makeup">Trial Makeup</option>
+                <option value="Bridal Makeup & Hair">Bridal Makeup & Hair</option>
+                <option value="Family & Friends">Family & Friends</option>
+                <option value="Mehandi">Mehandi</option>
+              </select>
+            </div> -->
+
+            <!-- Message -->
+            <div class="mb-4">
+              <label class="form-label">Message</label>
+              <textarea name="message" class="form-control" rows="4" [(ngModel)]="formData.message"></textarea>
+            </div>
+
+
+            
+        <!-- ✅ SUCCESS / ERROR MESSAGES -->
+        <div *ngIf="successMessage" class="alert alert-success text-center mt-3">
+            {{ successMessage }}
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger text-center mt-3">
+            {{ errorMessage }}
+        </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-dark w-100 py-2 fw-bold enquire-btn">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+/* Remove gaps between image cards */
+.row.g-0 {
+  margin: 0;
+}
+
+/* Image Card Style */
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0; /* squared edges */
+}
+
+.service-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Slight zoom on hover */
+.image-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+/* Bride Name Styling */
+.bride-name {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-family: "Playfair Display", serif; /* elegant stylish font */
+  font-size: 1.4rem; /* larger name */
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Underline on hover */
+.image-card:hover .bride-name {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Optional: make button neat */
+.btn-dark {
+  background-color: #000;
+  border: none;
+}

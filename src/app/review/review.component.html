@@ -1,0 +1,58 @@
+<div class="testimonial-section">
+
+  <!-- Headings -->
+  <h2 class="main-heading fade-left">Testimonial</h2>
+  <h3 class="sub-heading fade-left">Clients Feedback</h3>
+  <hr class="heading-line">
+
+  <!-- Average Rating -->
+  <div class="average-rating fade-left">
+    <span class="rating-text">{{ratingText}}</span>
+    <div class="stars">
+      <span *ngFor="let s of fullStars">⭐</span>
+    </div>
+    <div class="google-info">
+      <!-- <span class="material-icons google-icon">google</span> -->
+      Based on {{totalReviews}} reviews
+    </div>
+        <h2 class="google-heading fade-left">
+        <span class="g">G</span>
+        <span class="o1">o</span>
+        <span class="o2">o</span>
+        <span class="g2">g</span>
+        <span class="l">l</span>
+        <span class="e">e</span> 
+        </h2>
+  </div>
+
+  <!-- Swiper Reviews -->
+  <swiper-container
+    slides-per-view="3"
+    space-between="30"
+    loop="true"
+    autoplay-delay="2500"
+    autoplay-disable-on-interaction="false"
+    pagination="true"
+    class="review-swiper fade-left"
+  >
+    <swiper-slide *ngFor="let r of reviews">
+      <div class="review-box">
+
+        <span class="google-icon-card">
+        <img src="assets/images/icons8-google.svg" alt="google">
+        </span>
+
+
+        <div class="review-top">
+          <img class="avatar" [src]="r.avatar" alt="{{r.name}}">
+          <h4>{{ r.name }}</h4>
+        </div>
+        <div class="stars">
+          <span *ngFor="let s of [].constructor(r.rating)">⭐</span>
+        </div>
+        <p class="comment">“{{ r.comment }}”</p>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+</div>
