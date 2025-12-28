@@ -1,6 +1,6 @@
 <!-- HERO SECTION -->
 <!-- HERO SECTION (Full-screen carousel with overlay text on every slide) -->
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+<!-- <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
 
   <div class="carousel-inner">
     <div class="carousel-item active position-relative">
@@ -105,10 +105,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Navigation Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -116,7 +116,64 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div> -->
+
+<div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="3500">
+
+  <!-- Carousel Images ONLY -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/IMG_0219.JPG" class="d-block w-100 hero-img" alt="Look 1">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/IMG_0221.JPG" class="d-block w-100 hero-img" alt="Look 2">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/IMG_0214.JPG" class="d-block w-100 hero-img" alt="Look 3">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/IMG_0226.JPG" class="d-block w-100 hero-img" alt="Look 4">
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay-bright"></div>
+
+  <!-- 🔥 STICKY TEXT CONTENT -->
+  <div class="hero-content">
+    <h1 class="display-5 fw-bold text-uppercase hero-title">
+      LAKSHYA MAKEOVERS
+    </h1>
+
+    <p class="lead mb-4">
+      Bridal Makeup & Celebrity Makeover Studio
+    </p>
+
+    <div class="d-flex gap-3 justify-content-end">
+      <a href="#" class="btn btn-lg btn-outline-light px-4 hero-btn">
+        CONTACT ME
+      </a>
+
+      <a routerLink="/price-package" class="btn btn-lg btn-outline-light px-4 hero-btn">
+        PRICE PACKAGE
+      </a>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
 </div>
+
 
 <!-- WHAT WE DO SECTION -->
 <section class="what-we-do py-5 text-center bg-light">
