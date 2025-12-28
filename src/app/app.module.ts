@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { ServiceDetailComponent } from './pages/service-detail/service-detail.component';
 import { SwiperModule } from 'swiper/types';
 import { ReviewComponent } from './review/review.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ReviewComponent } from './review/review.component';
     ContactComponent,
     PricePackageComponent,
     ServiceDetailComponent,
-    ReviewComponent
+    ReviewComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

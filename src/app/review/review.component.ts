@@ -33,7 +33,7 @@ export class ReviewComponent implements AfterViewInit{
   fullStars: number[] = [];
 
   reviews = [
-    { name: "Aishwarya", comment: "My bridal makeover was absolutely stunning!", rating: 5, avatar: "assets/images/IMG_0180.JPG)" },
+    { name: "Aishwarya", comment: "Very professional and the makeover lasted the entire day!", rating: 5, avatar: "assets/images/IMG_0185.JPG" },
     { name: "Nandana", comment: "Very professional and the makeover lasted the entire day!", rating: 5, avatar: "assets/images/IMG_0185.JPG" },
     { name: "Pranitha", comment: "Amazing experience! The look was exactly how I dreamed.", rating: 5, avatar: "assets/images/IMG_0188.JPG" },
     { name: "Athira", comment: "Loved the hairstyle and makeup. Thank you so much!", rating: 5, avatar: "assets/images/IMG_0189.JPG" }

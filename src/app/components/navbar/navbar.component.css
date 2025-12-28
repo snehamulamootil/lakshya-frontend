@@ -12,9 +12,70 @@
   transition: color 0.3s ease;
 }
 
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+
 .nav-link:hover {
   color: #524d50 !important;
 }
+
+
+
+/* Allow underline on dropdown nav item */
+.navbar .nav-link.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover effect */
+.navbar .nav-link.dropdown-toggle:hover::after {
+  width: 100%;
+}
+
+
+
+/* Navbar link base */
+.navbar .nav-link {
+  position: relative;
+  padding-bottom: 6px;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+/* Underline using ::before (no Bootstrap conflict) */
+.navbar .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover underline */
+.navbar .nav-link:hover::before {
+  width: 100%;
+}
+
+/* Remove dropdown arrow */
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
 
 .btn-primary {
   background-color: #433c40;

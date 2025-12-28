@@ -1,0 +1,65 @@
+.blog-page {
+  background-color: #fff;
+}
+
+.blog-card {
+  max-width: 100%;
+  text-align: center;
+}
+
+
+
+.blog-image {
+  width: 100%;
+  height: 440px;          /* 👈 control height */
+  object-fit: cover;     /* 👈 crop without stretching */
+  border-radius: 14px;
+  background-color: #f8f8f8; /* fills empty space neatly */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+
+.blog-question {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.blog-answer {
+  font-family: 'Playfair Display', serif;
+  color: #555;
+  line-height: 1.9;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+/* FAQ Styling */
+.accordion-button {
+  font-weight: 500;
+  background: #f9f9f9;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.accordion-body {
+  font-family: 'Playfair Display', serif;
+  color: #bcbaba;
+  line-height: 1.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .blog-answer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-image {
+    height: 200px;
+  }
+}
+

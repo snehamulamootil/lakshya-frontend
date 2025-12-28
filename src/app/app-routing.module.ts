@@ -6,6 +6,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PricePackageComponent } from './pages/price-package/price-package.component';
 import { ServiceDetailComponent } from './pages/service-detail/service-detail.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'price-package', component: PricePackageComponent },
-  { path: 'service/:id', component: ServiceDetailComponent },
+  { path: 'blog' , component:BlogComponent },
+  { path: 'gallery', component: ServiceDetailComponent },
   // { path: 'services', loadChildren: () => import('./pages/services/services.module').then(m => m.ServicesModule) }, // future
   { path: '**', redirectTo: '' }
 ];
