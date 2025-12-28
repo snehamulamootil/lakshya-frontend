@@ -26,7 +26,7 @@ export class ReviewComponent implements AfterViewInit{
   }
 
    averageRating = 4.9;
-  totalReviews = 50;
+  totalReviews = 100;
     ratingText = "EXCELLENT";
 
   // Precompute full stars as array
@@ -41,7 +41,9 @@ export class ReviewComponent implements AfterViewInit{
 
   constructor() {
     // Precompute star array for average rating
-    this.fullStars = Array(Math.floor(this.averageRating)).fill(0);
+    // this.fullStars = Array(Math.floor(this.averageRating)).fill(0);
+    this.fullStars = Array(5).fill(0);
+
   }
 
 }
