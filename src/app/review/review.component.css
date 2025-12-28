@@ -20,6 +20,26 @@
 }
 
 
+.testimonial-section {
+  padding: 60px 20px;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 28px;
+}
+
+.heading-line {
+  width: 80px;
+  margin: 10px auto 30px;
+}
+
+.average-rating {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
 .main-heading {
   font-size: 34px;
   font-weight: 700;
@@ -68,6 +88,8 @@
   justify-content: center;   
   align-items: center;   
   gap: 0px;
+  font-size: 36px;
+  margin-top: 10px;
 }
 
 /* Google Colors */
@@ -126,6 +148,20 @@
   margin-bottom: 10px;
 }
 
+
+
+.review-top h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.comment {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+
 /* Start hidden before scroll */
 .fade-left {
   opacity: 0;
@@ -138,9 +174,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-
-
-
 
 .avatar {
   width: 45px;
@@ -156,10 +189,11 @@
 }
 
 .comment {
-  font-size: 16px;
   color: #555;
   font-style: italic;
   line-height: 1.5;
+  font-size: 14px;
+  margin-top: 12px;
 }
 
 /* Responsive */
@@ -167,3 +201,50 @@
   swiper-container { --swiper-slides-per-view: 1; }
   .review-swiper { width: 95%; }
 }
+
+@media (max-width: 768px) {
+
+  .sub-heading {
+    font-size: 22px;
+  }
+
+  .google-heading {
+    font-size: 28px;
+  }
+
+  .average-rating {
+    margin-bottom: 25px;
+  }
+
+  .review-box {
+    padding: 20px;
+  }
+
+  .review-top h4 {
+    font-size: 15px;
+  }
+
+  .comment {
+    font-size: 13px;
+  }
+
+  .google-icon-card img {
+    width: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .sub-heading {
+    font-size: 24px;
+  }
+
+  .google-heading {
+    font-size: 32px;
+  }
+
+  .review-box {
+    padding: 22px;
+  }
+}
+

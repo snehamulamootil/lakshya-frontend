@@ -1,7 +1,6 @@
 <div class="testimonial-section">
 
   <!-- Headings -->
-  <h2 class="main-heading fade-left">Testimonial</h2>
   <h3 class="sub-heading fade-left">Clients Feedback</h3>
   <hr class="heading-line">
 
@@ -26,15 +25,34 @@
   </div>
 
   <!-- Swiper Reviews -->
-  <swiper-container
+    <swiper-container
     slides-per-view="3"
     space-between="30"
     loop="true"
     autoplay-delay="2500"
     autoplay-disable-on-interaction="false"
     pagination="true"
+    breakpoints='{
+      "0": {
+        "slidesPerView": 1,
+        "spaceBetween": 15
+      },
+      "640": {
+        "slidesPerView": 1,
+        "spaceBetween": 20
+      },
+      "768": {
+        "slidesPerView": 2,
+        "spaceBetween": 25
+      },
+      "1024": {
+        "slidesPerView": 3,
+        "spaceBetween": 30
+      }
+    }'
     class="review-swiper fade-left"
   >
+
     <swiper-slide *ngFor="let r of reviews">
       <div class="review-box">
 

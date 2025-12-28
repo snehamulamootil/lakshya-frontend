@@ -1,54 +1,52 @@
-<!-- <p>blog works!</p> -->
 <section class="blog-page py-5">
   <div class="container">
 
-    <!-- Page Heading -->
-    <h2 class="text-center fw-bold mb-5"
-        style="font-family: 'Playfair Display', serif;">
-      Beauty Blog
-    </h2>
+    <!-- BLOG SECTION -->
+    <div id="blog">
+      <h2 class="text-center fw-bold mb-5"
+          style="font-family: 'Playfair Display', serif;">
+        Beauty Blog
+      </h2>
 
-    <!-- Blog Card -->
-    <div class="blog-card mx-auto mb-5">
+      <div class="blog-card mx-auto mb-5">
+        <img src="assets/images/IMG_0264.JPG"
+             alt="Bridal Makeup Tips"
+             class="img-fluid blog-image">
 
-      <img src="assets/images/IMG_0264.JPG"
-           alt="Bridal Makeup Tips"
-           class="img-fluid blog-image">
+        <h3 class="blog-question mt-4">
+          How to Choose the Perfect Bridal Makeup Look?
+        </h3>
 
-      <h3 class="blog-question mt-4">
-        How to Choose the Perfect Bridal Makeup Look?
-      </h3>
-
-      <p class="blog-answer">
-        Choosing the perfect bridal makeup look depends on your outfit, skin tone,
-        wedding theme, and personal style. A professional trial session helps you
-        understand what suits you best and ensures confidence on your big day.
-        At Lakshya Makeovers, we focus on enhancing natural beauty while ensuring
-        long-lasting, camera-ready perfection.
-      </p>
+        <p class="blog-answer">
+          Choosing the perfect bridal makeup look depends on your outfit, skin tone,
+          wedding theme, and personal style. A professional trial session helps you
+          understand what suits you best and ensures confidence on your big day.
+          At Lakshya Makeovers, we focus on enhancing natural beauty while ensuring
+          long-lasting, camera-ready perfection.
+        </p>
+      </div>
     </div>
 
-    <!-- FAQ Section -->
-    <div class="faq-section mt-5">
+    <!-- FAQ SECTION -->
+    <div id="faq" class="faq-section mt-5">
       <h3 class="text-center fw-bold mb-4"
           style="font-family: 'Playfair Display', serif;">
         Frequently Asked Questions
       </h3>
 
       <div class="accordion" id="faqAccordion">
-
         <div class="accordion-item"
              *ngFor="let faq of faqs; let i = index">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    [attr.data-bs-target]="'#faq' + i">
+                    [attr.data-bs-target]="'#faqItem' + i">
               {{ faq.question }}
             </button>
           </h2>
 
-          <div [id]="'faq' + i"
+          <div [id]="'faqItem' + i"
                class="accordion-collapse collapse"
                data-bs-parent="#faqAccordion">
             <div class="accordion-body">
@@ -56,7 +54,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

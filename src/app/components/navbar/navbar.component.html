@@ -37,7 +37,32 @@
         </li>
 
 
-        <li class="nav-item"><a class="nav-link px-3" routerLink="/blog" style="font-size: 1rem; font-weight: 500;">Blog</a></li>
+        <!-- <li class="nav-item"><a class="nav-link px-3" routerLink="/blog" style="font-size: 1rem; font-weight: 500;">Blog</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3"
+            href="#"
+            id="blogDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="font-size: 1rem; font-weight: 500;">
+            Blog
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="/blog" fragment="blog">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/blog" fragment="faq">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </li>
+
       </ul>
     </div>
   </div>

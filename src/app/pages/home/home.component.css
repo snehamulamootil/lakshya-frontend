@@ -5,25 +5,30 @@
 
 /* Carousel image height */
 
+/* ===== SAFARI + ALL BROWSERS FIX ===== */
+
 #heroCarousel,
 #heroCarousel .carousel-inner,
 #heroCarousel .carousel-item {
-  height: 90vh; /* Adjust as needed */
+  height: 90vh;
+  height: 90svh;   /* Safari safe */
+  height: 90dvh;   /* Modern browsers */
+  min-height: 600px;
+  max-height: 900px;
 }
-@supports (-webkit-touch-callout: none) {
-  #heroCarousel,
-  #heroCarousel .carousel-inner,
-  #heroCarousel .carousel-item {
-    height: 85vh; /* Safari correction */
-  }
-}
+
+/* Mobile */
 @media (max-width: 768px) {
   #heroCarousel,
   #heroCarousel .carousel-inner,
   #heroCarousel .carousel-item {
     height: 70vh;
+    height: 70svh;
+    height: 70dvh;
+    min-height: 450px;
   }
 }
+
 
 
 
@@ -81,6 +86,7 @@
   width: 100%;
   object-fit: cover;           /* Crops edges slightly for perfect fit */
   filter: brightness(80%);     /* Dim for better text visibility */
+  object-position: center top; 
 }
 
 /* Overlay text centered */
