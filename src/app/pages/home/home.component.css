@@ -172,37 +172,44 @@
 /* Mobile text tuning */
 @media (max-width: 576px) {
 
+  /* Keep content at bottom */
   .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    bottom: auto;
-    right: auto;
-    transform: translate(-50%, -50%);
+    right: 16px;
+    left: 16px;
+    bottom: 28px;        /* IMPORTANT: prevents cutting */
     text-align: center;
-    width: 100%;
-    padding: 0 16px;
+    max-width: 100%;
   }
 
+  /* Title in ONE LINE */
   .hero-title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    white-space: normal;   /* IMPORTANT */
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    white-space: nowrap;    /* keep in one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
+  /* Subtitle */
   .hero-content p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 14px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
   }
 
+  /* Buttons stay in one row */
   .hero-buttons {
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;  /* 👈 justified gap */
+    gap: 12px;
+  }
+
+  /* Smaller buttons for mobile */
+  .hero-buttons .btn {
+    flex: 1;
+    font-size: 0.75rem;
+    padding: 8px 10px;
   }
 }
-
-
 
 
 
