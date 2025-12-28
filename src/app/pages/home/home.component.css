@@ -4,10 +4,28 @@
 }
 
 /* Carousel image height */
-.hero-img {
-  height: 100vh;
-  object-fit: cover;
+
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+  height: 90vh; /* Adjust as needed */
 }
+@supports (-webkit-touch-callout: none) {
+  #heroCarousel,
+  #heroCarousel .carousel-inner,
+  #heroCarousel .carousel-item {
+    height: 85vh; /* Safari correction */
+  }
+}
+@media (max-width: 768px) {
+  #heroCarousel,
+  #heroCarousel .carousel-inner,
+  #heroCarousel .carousel-item {
+    height: 70vh;
+  }
+}
+
+
 
 .hero-title {
   white-space: nowrap;
@@ -59,7 +77,7 @@
 
 
 .hero-img {
-  height: 90vh;              /* Full screen height */
+  height: 100%;              /* Full screen height */
   width: 100%;
   object-fit: cover;           /* Crops edges slightly for perfect fit */
   filter: brightness(80%);     /* Dim for better text visibility */
