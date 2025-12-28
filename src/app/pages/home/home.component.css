@@ -172,18 +172,36 @@
 /* Mobile text tuning */
 @media (max-width: 576px) {
 
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 16px;
+  }
+
   .hero-title {
-    font-size: 1.9rem;        /* smaller but bold */
-    letter-spacing: 2px;
+    font-size: 1.8rem;
     line-height: 1.2;
+    letter-spacing: 2px;
+    white-space: normal;   /* IMPORTANT */
   }
 
   .hero-content p {
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 }
+
 
 
 
